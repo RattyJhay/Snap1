@@ -16,11 +16,11 @@ const shadow = document.querySelector('.shadow')
 
 feature.addEventListener('click', () => {
   if (!featureList.classList.contains('active')) {
-    featureImage.src = "icon-arrow-up.svg"
+    featureImage.src = "/images/icon-arrow-up.svg"
 
     featureList.classList.add('active')
   } else {
-    featureImage.src = "icon-arrow-down.svg"
+    featureImage.src = "/images/icon-arrow-down.svg"
 
     featureList.classList.remove('active')
   }
@@ -29,11 +29,11 @@ feature.addEventListener('click', () => {
 
 company.addEventListener('click', () => {
   if (!companyList.classList.contains('active')) {
-    companyImage.src = "icon-arrow-up.svg"
+    companyImage.src = "/images/icon-arrow-up.svg"
 
     companyList.classList.add('active')
   } else {
-    companyImage.src = "icon-arrow-down.svg"
+    companyImage.src = "/images/icon-arrow-down.svg"
 
     companyList.classList.remove('active')
   }
@@ -50,13 +50,13 @@ burgerMenu.addEventListener('click', () => {
 function burgerMenuFunc() {
   if (!burgerMenu.classList.contains('open')) {
     burgerMenu.classList.add('open')
-    burgerMenu.src = "icon-close-menu.svg";
+    burgerMenu.src = "/images/icon-close-menu.svg";
 
     wrapper.style.left = "8.35rem";
     shadow.style.opacity = "1"
   } else {
     burgerMenu.classList.remove('open')
-    burgerMenu.src = "icon-menu.svg";
+    burgerMenu.src = "/images/icon-menu.svg";
 
     wrapper.style.left = "25.5rem";
     shadow.style.opacity = "0"
